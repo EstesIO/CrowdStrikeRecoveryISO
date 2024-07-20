@@ -1,3 +1,7 @@
+## In wake of the recent Global outage of Windows computers, I thought I might try and find a way to help get non-techincal folks back online Faster. 
+## the goal of the script and project is to bake it into a lightweight Linux Distro and be able to be put into an ISO so that it can beooted via USB or PXE boot for mass recovery deplopyments. 
+##Auther : Grayson Estes (July-20-24)
+
 #!/bin/bash
 
 # Function to unmount drives before exit
