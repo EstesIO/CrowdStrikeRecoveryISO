@@ -7,7 +7,7 @@ ISO_DIR="$WORK_DIR/iso"
 EXTRACT_DIR="$WORK_DIR/extract"
 NEW_ISO_DIR="$WORK_DIR/new_iso"
 SCRIPT_NAME="CrowdStrikeFixerBoot.sh"
-SCRIPT_URL="http://your-script-url-here/CrowdStrikeFixerBoot.sh" # Replace with your actual script URL
+SCRIPT_URL="https://github.com/EstesIO/CrowdStrikeRecoveryISO/blob/main/CrowdStrikeFixerBoot.sh" # Replace with your actual script URL
 NTFS_3G_URL="http://tinycorelinux.net/11.x/x86/tcz/ntfs-3g.tcz"
 ISO_OUTPUT_NAME="FalconBoot-Reboot.ISO"
 
