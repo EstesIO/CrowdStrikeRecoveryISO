@@ -1,0 +1,34 @@
+# Download and mount the ISO
+mkdir /tmp/custom_iso
+sudo mount -o loop path_to_iso /mnt
+sudo rsync -a /mnt/ /tmp/custom_iso/
+sudo umount /mnt
+
+# Add your script
+mkdir -p /tmp/custom_iso/custom_scripts
+cp your_script.sh /tmp/custom_iso/custom_scripts/
+chmod +x /tmp/custom_iso/custom_scripts/your_script.sh
+
+# Edit boot configuration
+nano /tmp/custom_iso/casper/scripts/casper-bottom/99_run_script
+
+# Add this content to 99_run_script
+#!/bin/bash
+/custom_scripts/your_script.sh
+
+# Regenerate and make the ISO bootable
+cd /tmp/custom_iso
+sudo mkisofs -o /path_to_new_iso/custom_linux.iso -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -J -R -V "Custom Linux" /tmp/custom_iso/
+isohybrid /path_to_new_iso/custom_linux.iso
+
+
+
+cp CrowdStrikeFixerBoot.sh /tmp/custom_iso/custom_scripts/
+chmod +x /tmp/custom_iso/custom_scripts/CrowdStrikeFixerBoot.sh
+
+## Modify Boot Config
+nano /tmp/custom_iso/casper/scripts/casper-bottom/99_run_script
+
+## add the line
+#!/bin/bash
+/custom_scripts/CrowdStrikeFixerBoot.sh
