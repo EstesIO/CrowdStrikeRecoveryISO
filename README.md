@@ -8,7 +8,7 @@ This is currently a Work in progress, I hope to have a lightweight ISO built soo
 
 The offical Link for CrowdStrike Recovery process - https://www.crowdstrike.com/blog/statement-on-falcon-content-update-for-windows-hosts/
 
-Microsoft Lanached a new Recovery Tool here --> https://techcommunity.microsoft.com/t5/intune-customer-success/new-recovery-tool-to-help-with-crowdstrike-issue-impacting/ba-p/4196959
+Microsoft Launched a new Recovery Tool Here --> https://techcommunity.microsoft.com/t5/intune-customer-success/new-recovery-tool-to-help-with-crowdstrike-issue-impacting/ba-p/4196959
 
 Other Boot Options: https://netboot.xyz/
 
